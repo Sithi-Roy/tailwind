@@ -1,0 +1,90 @@
+/* .banner{
+    background-image: url(/bg.png);
+    background-repeat: no-repeat;
+} */
+.menu_border{
+    border-radius: 0 250px 0 150px;
+}
+.nav_area{
+    position: relative;
+}
+.nav_link::after{
+    content: "";
+    height: 1px;
+    width: 0%;
+    display: block;
+    background-color: red;
+    transition: width 0.2s;
+}
+.nav_link:hover::after{
+    width: 100%;
+}
+
+ul li > .dropdown{
+    display: none;
+    position:absolute;
+}
+ul li:hover > .dropdown{
+    display: block;
+    background-color: wheat;
+    width: 100px;
+    height: 140px;
+    margin-top: 12px;
+}
+ul li:hover > .dropdown li {
+    padding-top: 10px;
+    padding-left: 15px;
+    padding-bottom: 0px;
+}
+
+/* animation */
+.scale-up{
+    font-size: 2rem;
+    text-align: center;
+    animation: scaleUp 2s forwards;
+}
+.scale-up:hover{
+    transform: scale(0.5);
+
+}
+/* @keyframes scaleUp {
+    to{
+        transform:scale(1);
+    }
+}
+.zoomCart:hover{
+    transform: scale(1.05);
+} */
+
+.zoom_out{
+    transition: transform 0.8s ease;
+}
+.zoom_out:hover{
+    transform: scale(0.9);
+}
+
+/* review section css here */
+.carousel-inner{
+    transition: transform 0.5s ease-in-out;
+}
+.carousel-item{
+    min-width: 100%;
+    box-sizing: border-box;
+}
+
+.review_btn{
+    position: absolute;
+    top: 35%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    z-index: 1;
+}
+
+.prevSlide{
+    left: 0px;
+}
+.nextSlide{
+    right: 0px;
+}
+
+    
